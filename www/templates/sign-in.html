@@ -1,0 +1,24 @@
+<ion-view title="登录" left-buttons="leftButtons" right-buttons="rightButtons">
+  <ion-content has-header="true">
+    <div class="list">
+      <div class="item item-input-inset">
+        <label class="item item-input-wrapper">
+          <input type="number" ng-model="user.username" placeholder="手机号码">
+        </label>
+      </div>
+      <div class="item item-input-inset">
+        <label class="item item-input-wrapper">
+          <input type="number" ng-model="smsToken" placeholder="验证码">
+        </label>
+        <button class="button">
+          获取验证码
+        </button>
+      </div>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="signIn(user)">
+        登录
+      </button>
+    </div>
+  </ion-content>
+</ion-view>
